@@ -2,7 +2,7 @@
 var amount, rate, hours, minutes, x, table;
 var precison = 9;
 var status = "good";
-var times = 1000;
+var times = 100;
 var output = "";
 var stats = "normal";
 
@@ -106,12 +106,12 @@ function showMore()
 	if (showMoreCheck.checked == true)
 	{
 		//How many times to check
-    	times = 2000
+    	times = 1500
   	}
   	else
   	{
   		//How many times to check
-    	times = 1000
+    	times = 100
   	}
   	//Rerun the initate function to get up-to-date information to display
   	initiate();
