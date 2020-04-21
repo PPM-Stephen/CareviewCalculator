@@ -1,0 +1,160 @@
+/*Bult in*/
+html
+{
+	background-color: #f8f8f8;
+}
+
+body
+{
+	margin: 0;
+	font-family: 'Bellota Text';
+	font-size: 0.8vw;
+	color: black;
+}
+
+h1
+{
+	color: #a6ced7;
+	font-weight: normal;
+	text-align: center;
+	margin-left: 23.5vh;
+}
+
+footer
+{
+	margin-top: 1.5vh;
+	text-align: center;
+}
+
+/*Styles for table*/
+table 
+{
+  width:100%;
+}
+table, th, td 
+{
+  border-collapse: collapse;
+}
+th, td 
+{
+  padding: 5px;
+  text-align: center;
+}
+table#t01 tr:nth-child(even) 
+{
+  background-color: #d8edf0;
+}
+table#t01 tr:nth-child(odd) 
+{
+ background-color: #fff;
+}
+table#t01 th 
+{
+  background-color: black;
+  color: white;
+}
+td.title
+{
+	font-weight: bold;
+	font-size: 1vw;
+	color: #a6ced7;
+	text-align: center;
+}
+
+/*Styles for main content*/
+#main
+{
+	background-color: white;
+	width: 50vw;
+	height: 79%;
+	margin-left: 25vw;
+	-webkit-box-shadow: 0px 0px 16px 6px rgba(216,237,240,0.98);
+	-moz-box-shadow: 0px 0px 16px 6px rgba(216,237,240,0.98);
+	box-shadow: 0px 0px 16px 6px rgba(216,237,240,0.98);
+	z-index: 1;
+	position: relative;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+}
+
+/*Styles for top half of header*/
+#top1
+{
+	background-color: #f8f8f8;
+	height: 10vh;
+	overflow: hidden;
+}
+
+/*Styles for the logo image*/
+.logo
+{
+	margin-left: 25vw;
+	max-height: 10vh;
+	width: auto;
+	max-width: 340px;
+}
+
+/*Styles for bottom half of header*/
+#top2
+{
+	height: 5vh;
+	min-height: 1vh;
+	background: rgba(216,237,240,1);
+	background: -moz-linear-gradient(-45deg, rgba(216,237,240,1) 0%, rgba(131,196,207,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(216,237,240,1)), color-stop(100%, rgba(131,196,207,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(216,237,240,1) 0%, rgba(131,196,207,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(216,237,240,1) 0%, rgba(131,196,207,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(216,237,240,1) 0%, rgba(131,196,207,1) 100%);
+	background: linear-gradient(135deg, rgba(216,237,240,1) 0%, rgba(131,196,207,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8edf0', endColorstr='#83c4cf', GradientType=1 );
+	z-index: 2;
+	position: relative;
+	font-family: 'Sofia';
+	font-size: 1.3vw;
+	color: white;
+	
+}
+#top2 h2
+{
+	margin-top: 0;
+	margin-right: 25vw;
+	font-weight: normal;
+	float: right;
+}
+
+/*Stles for the textboxes where amount and rate are entered*/
+.box
+{
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0px 0px 5px 1px rgba(216,237,240,1);
+	-moz-box-shadow: inset 0px 0px 5px 1px rgba(216,237,240,1);
+	box-shadow: inset 0px 0px 5px 1px rgba(216,237,240,1);
+	width: 5vw;
+	height: 4vh;
+	padding: 5px;
+}
+
+/*Styles for the GO button*/
+#btn1
+{
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0px 0px 5px 1px rgba(216,237,240,1);
+	-moz-box-shadow: inset 0px 0px 5px 1px rgba(216,237,240,1);
+	box-shadow: inset 0px 0px 5px 1px rgba(216,237,240,1);
+	font-size: 1.2vw;
+}
+#btn1:hover
+{
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(216,237,240,1);
+-moz-box-shadow: 0px 0px 5px 1px rgba(216,237,240,1);
+box-shadow: 0px 0px 5px 1px rgba(216,237,240,1);
+}
+
+/*Style to align text to the center*/
+#actions
+{
+	text-align: center;
+}

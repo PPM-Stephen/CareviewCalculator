@@ -1,0 +1,46 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="img/favicon.ico?crc=4053527818"/>
+	<title>Careview Calculator - Peak Plan Management</title>
+	<!-- Link Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Link fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bellota%20Text' rel='stylesheet'>
+</head>
+
+<body>
+	<!-- Header code -->
+	<div id="top1">
+		<img class="logo" src="img/logo.png" />
+	</div>
+	<div id="top2">
+		<h2>A PPM Project</h2>
+	</div>
+
+	<!-- Main content -->
+	<div id="main">
+		<h1>Careview Rate - Time Calculator</h1>
+		<p>This is for usage in cases where invoice document values cannot be easily calculated within careview (e.g. time = 0.33hours). To obtain values for rate and time that will satisfy the invoice requirements, simply input your desired amount for a service in careview (that will lead to the desired invoice total) and supply the maximum possible rate for that service. You may then pick from a list of values produced in the results zone.</p>
+		<!-- Textboxes, checkboxes and button -->
+		<section id="actions">
+			<section>
+				<input type="number" id="inputAmount" class="box" onchange="updatePage()" placeholder="Amount">
+				<input type="number" id="inputRate" class="box" onchange="updatePage()" placeholder="Rate">
+				<button id="btn1" onclick="initiate()">Go!</button><br />
+				<div style="margin-right: 15px" id="extraStats">&nbsp;</div>
+			</section>
+			<input type="checkbox" class="button" id="showMoreCheck" onclick="showMore()"> <b>Show more results!</b>
+			<input type="checkbox" class="button" id="nerdModeCheck" onclick="initiateNerdMode()"> <b>Show me stats for nerds!</b>
+		</section>
+		<!-- Display table with data -->
+		<p id="mainOutput"></p>
+	</div>
+</body>
+
+<footer>
+© 2020 Original by Stephen Delwig, Web Port by Samantha Smith. For help <a href="mailto:sam@peakplanmanagement.com.au">email</a> Sam.
+</footer>
+	<!-- Link and include JavaScript file -->
+	<script src="js/calculator.js" type="text/javascript"></script>
+</html>
